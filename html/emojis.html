@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Styles - Emojis and ASCII Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background-color: #fff;
+            color: #222;
+        }
+        h1, h2 {
+            color: #3268a8;
+        }
+        table {
+            border-collapse: collapse;
+            width: 45%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.6em 1em;
+            text-align: center;
+        }
+        th {
+            background: #eaeaea;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .emoji { font-size: 1.3em; }
+    </style>
+</head>
+<body>
+    <h2>1. Emojis in HTML</h2>
+    <div>
+        <b>Direct Emoji Example:</b>
+        <span class="emoji">😀 😃 😄 😁 😆 😅 😊 😄</span>
+        <br><br>
+        <b>Another Emoji:</b> <span class="emoji">❤️</span>
+        <br><br>
+        <b>Using Unicode Entity:</b>
+        <code>&amp;#128512;</code> → <span class="emoji">&#128512;</span>
+        <br><br>
+        We <span class="emoji">❤️</span> HTML <span class="emoji">😊</span> &amp; CSS!
+    </div>
+    <h2>2. ASCII Values Table</h2>
+    <table>
+        <tr>
+            <th>Character</th>
+            <th>ASCII Value</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>@</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>Space</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>$</td>
+            <td>36</td>
+        </tr>
+    </table>
+    <div style="font-size:0.98em; color:#555;">
+        ASCII helps in converting characters into numbers that computers can understand.
+    </div>
+</body>
+</html>
