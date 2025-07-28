@@ -2,10 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URL Encoding Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            padding: 30px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .example {
+            background: #f0f0f0;
+            border-left: 4px solid #0077cc;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .tip {
+            background-color: #e0f7e9;
+            padding: 10px;
+            border-left: 4px solid #2ecc71;
+            margin: 20px 0;
+            color: #2d7a48;
+        }
+        a {
+            color: #0077cc;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>🌐 URL Encoding Guide</h1>
+        
+        <h2>What is URL Encoding?</h2>
+        <p>
+            URL encoding converts special characters into a format that can be safely sent over the Internet.
+            For example, a space becomes <code>%20</code>.
+        </p>
+
+        <h2>Why Encode?</h2>
+        <ul>
+            <li>URLs can't contain spaces or special characters like <code>&</code> and <code>=</code>.</li>
+            <li>Encoding ensures data is transmitted correctly.</li>
+        </ul>
+
+        <h2>Example</h2>
+        <div class="example">
+            <strong>Before Encoding:</strong><br>
+            <code>https://example.com/search?q=hello world & food</code><br><br>
+            <strong>After Encoding:</strong><br>
+            <code>https://example.com/search?q=hello%20world%20%26%20food</code>
+        </div>
+
+        <h2>Useful Tools</h2>
+        <ul>
+            <li><a href="https://www.urlencoder.org/" target="_blank">URL Encoder Tool</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" target="_blank">MDN Web Docs: encodeURIComponent()</a></li>
+        </ul>
+
+        <div class="tip">
+            💡 Tip: Always use <code>encodeURIComponent()</code> in JavaScript to encode query values!
+        </div>
+    </div>
 </body>
 </html>
